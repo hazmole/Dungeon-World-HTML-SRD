@@ -157,6 +157,10 @@ tag {
   margin-bottom: 0.2em;
 }
 
+/* Class */
+#look li{
+  margin-bottom: 0.5em;
+}
 
 @media only screen and (max-width: 600px) {
   nav#sidemenu {
