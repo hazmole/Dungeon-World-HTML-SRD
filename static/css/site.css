@@ -133,11 +133,13 @@ tag {
   padding: 0 0 0.5em;
   border-bottom: 1px solid black;
 }
-
 .MonsterQualities {
   margin-bottom: 0.4em;
   padding: 0 0 0.5em;
   border-bottom: 1px solid black;
+}
+.MonsterDescription {
+  margin-bottom: 0.4em;
 }
 
 /* Moves Block */
