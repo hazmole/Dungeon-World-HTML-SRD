@@ -51,6 +51,7 @@ p.NoIndent {
 }
 
 p.Item,p.MagicItem {
+   text-indent:0;
    font-weight:bold;
 }
 span.Tags {
