@@ -73,17 +73,9 @@ p.Requirement {
    font-style:italic;
 }
 
-p.MoveOneLine {
-   text-indent:0;
-   margin-left:2em;
-   margin-right:2em;
-}
-
 p.ExampleDialogue,p.ExampleDialogueFirstLine,p.ExampleDialogueLastLine {
-   margin-left:2em;
-   margin-right:2em;
-   text-indent:0;
-   font-style:italic;
+   font-style: italic;
+   margin: 0 0 .5em;
 }
 
 h3.MonsterName {
@@ -168,6 +160,10 @@ tag.purple { background: #cfb4ff; }
 .Move p {
   margin-top: 0px;
   margin-bottom: 0.2em;
+  margin-left: 0.5em;
+}
+.Move ul:last-child {
+  margin-bottom: 0.2em;
 }
 
 /* Class */
@@ -178,10 +174,13 @@ tag.purple { background: #cfb4ff; }
 .Example {
   background: #ddd;
   padding: 10px 10px;
-  margin-left: 30px;
-  margin-top: -10px;
+  margin-left: 50px;
+  margin-bottom: 20px;
   font-style: italic;
   border-radius: 5px;
+}
+.Example+.Example {
+  margin-top: -10px;
 }
 
 @media only screen and (max-width: 600px) {
