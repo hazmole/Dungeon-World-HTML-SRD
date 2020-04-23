@@ -16,10 +16,10 @@ Title: "The Wizard"
 <hr/>
 <h2>外觀</h2>
 <div id="look"><p class="InstructionsAfterHeader">從每列中各自選擇一項：</p>
-<ul><li>Haunted Eyes, Sharp Eyes, or Crazy Eyes</li>
-<li>Styled Hair, Wild Hair, or Pointed Hat</li>
-<li>Worn Robes, Stylish Robes, or Strange Robes</li>
-<li>Pudgy Body, Creepy Body, or Thin Body</li></ul></div>
+<ul><li>著魔的眼神, 銳利的眼神, 或 瘋狂的眼神</li>
+<li>時尚的髮型, 狂亂的髮型, 或 巫師尖帽</li>
+<li>老舊長袍, 漂亮長袍, 或 古怪長袍</li>
+<li>矮胖的體型, 詭異的體型, 或 消瘦的體型</li></ul></div>
 <hr/>
 <h2>屬性數值</h2>
 <p class="NoIndent">你的最大生命值為 4+體質值。</p>
@@ -28,26 +28,39 @@ Title: "The Wizard"
 <h2>起始動作</h2>
 <div id="startingmoves"><p class="InstructionsAfterHeader">選擇一個種族並獲得相應的動作：</p>
 <div id="racialmoves"><div class="Move"><h3 class="MoveName">精靈</h3>
-<p class="NoIndent">Magic is as natural as breath to you. Detect Magic is a cantrip for you.</p></div>
+<p class="NoIndent">魔法對你而言就如呼吸般自然。對你而言，<u>偵測魔法</u>法術將被視作戲法。</p></div>
 <div class="Move"><h3 class="MoveName">人類</h3>
-<p class="NoIndent">Choose one cleric spell. You can cast it as if it was a wizard spell.</p></div></div>
+<p class="NoIndent">選擇一個牧師法術。你可以把它視作法師法術一樣施放。</p></div></div>
 
 <div id="classmoves"><p class="Instructions">你起始還擁有以下動作：</p>
 <div class="Move"><h3 class="BasicMoveName">法術書 (Spellbook)</h3>
-<p class="NoIndent">You have mastered several spells and inscribed them in your spellbook. You start out with three first level spells in your spellbook as well as the cantrips. Whenever you gain a level, you add a new spell of your level or lower to your spellbook. You spellbook is 1 weight.</p></div>
+<p class="NoIndent">
+	你精通許多法術並將其抄寫進你的法術書中。你的法術書中起始寫有三個 等級1 的法術 和 三個戲法。每當你升級，將一個法術等級低於或等於你角色等級的法術加到法術書中。你的法術書有 <tag>1 重量</tag>。</p></div>
+
 <div class="Move"><h3 class="BasicMoveName">準備法術 (Prepare Spells)</h3>
-<p class="NoIndent">When you <strong>spend uninterrupted time (an hour or so) in quiet contemplation of your spellbook</strong>, you:</p>
-<ul><li>Lose any spells you already have prepared</li>
-<li>Prepare new spells of your choice from your spellbook whose total levels don’t exceed your own level+1.</li>
-<li>Prepare your cantrips which never count against your limit.</li></ul></div>
+<p class="NoIndent">
+	當你<strong>花費一段時間（一小時以上）不被打擾地安靜研究你的法術書</strong>，你將：</p>
+<ul>
+	<li>失去所有你已經準備好的法術。</li>
+	<li>準備你所選擇的新法術，其等級總和不能超過你自身的等級+1。</li>
+	<li>準備好你所有的戲法。戲法永遠不會被計入你的準備法術上限。</li></ul></div>
+
 <div class="Move"><h3 class="BasicMoveName">施放法術(智力) (Cast a Spell)</h3>
-<p class="NoIndent">When you <strong>release a spell you’ve prepared</strong>, roll+Int. ✴On a 10+, the spell is successfully cast and you do not forget the spell—you may cast it again later. ✴On a 7-9, the spell is cast, but choose one:</p>
-<ul><li>You draw unwelcome attention or put yourself in a spot. The GM will tell you how.</li>
-<li>The spell disturbs the fabric of reality as it is cast—take -1 ongoing to cast a spell until the next time you Prepare Spells.</li>
-<li>After it is cast, the spell is forgotten. You cannot cast the spell again until you prepare spells.</li></ul>
-<p class="NoIndent">Note that maintaining spells with ongoing effects will sometimes cause a penalty to your roll to cast a spell.</p></div>
+<p class="NoIndent">
+	當你<strong>施放一個你已經準備好的法術</strong>時，擲+智力：<br/>
+	✴擲出10+時，該法術被成功施放，且你並未遺忘該法術，因此你之後仍可以再次施展該法術。<br/>
+	✴擲出7-9時，該法術被施放，但你必須選擇一項：</p>
+<ul>
+	<li>你引來了不必要的注意、或將自己置身危險當中。GM會告訴你發生了什麼事。</li>
+	<li>你施放法術的行為擾亂了現實世界的經緯──直到下次你進行準備法術動作之前，你的施放法術動作將獲得持續-1。</li>
+	<li>在你施法後，該法術被你遺忘。直到你下次進行準備法術動作之前，你都無法再次施放該法術。</li></ul>
+<p class="NoIndent">
+	注意，維持一個帶有<tag>持續</tag>標籤的法術效果，有時會導致你在進行施放法術動作時承受減值。</p></div>
+
 <div class="Move"><h3 class="BasicMoveName">法術防禦 (Spell Defense)</h3>
-<p class="NoIndent">You may end any ongoing spell immediately and use the energy of its dissipation to deflect an oncoming attack. The spell ends and you subtract its level from the damage done to you.</p></div>
+<p class="NoIndent">
+	你可以立即終止任何你正在維持的<tag>持續</tag>法術，並使用消散的法術能量來偏轉攻擊。該法術將因此終止，且你可以把對你造成的傷害減去等同該法術等級的數值。</p></div>
+
 <div class="Move"><h3 class="BasicMoveName">儀式 (Ritual)</h3>
 <p class="NoIndent">When you <strong>draw on a place of power to create a magical effect</strong>, tell the GM what you’re trying to achieve. Ritual effects are always possible, but the GM will give you one to four of the following conditions:</p>
 <ul><li>It’s going to take days/weeks/months</li>
@@ -89,9 +102,9 @@ Title: "The Wizard"
 
 <h2>羈絆</h2>
 <div id="bonds"><p class="NoIndent">在至少一個欄位中填入你其中一名同伴的名字：</p>
-<p>_______________ will play an important role in the events to come. I have foreseen it!</p>
-<p>_______________ is keeping an important secret from me.</p>
-<p>_______________ is woefully misinformed about the world; I will teach them all that I can.</p></div>
+<p>_______________ 將在即將到來的事件中扮演重要的角色。我已經預見了！</p>
+<p>_______________ 對我隱瞞了一個重要的祕密。</p>
+<p>_______________ 對這個世界有著可悲的誤解；我將盡我所能的教導他。</p></div>
 <hr/>
 
 <h2>進階動作</h2>
