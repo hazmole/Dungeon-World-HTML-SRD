@@ -45,7 +45,7 @@ li.currentli.headli:not(.active) {
   background: #e7f5ff;
 }
 ul.tagList li {
-  margin: 5px 0;
+  margin: 3px 0;
 }
 
 h1, h2, h3, h4 {
@@ -157,8 +157,9 @@ hr {
 tag {
   font-size: 0.9em;
   margin: 1px;
-  padding: 3px;
+  padding: 1px 3px;
   background: #ddd;
+  border-radius: 5px;
 }
 tag.red { background: #ecacac; }
 tag.blue { background: #bcdbf3; }

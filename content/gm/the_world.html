@@ -90,7 +90,7 @@ Title: "世界"
 <h4>其他標籤</h4>
 <p class="NoIndent"><tag>安全 (Safe)</tag>: 外面的混亂麻煩並不會來到這裡，除非玩家們把它帶進來。恬靜且經常隱藏不為人知，若這個聚落將要失去或使另一個有益的標籤降級，則它改為失去安全標籤。</p>
 <p class="NoIndent"><tag>信仰 (Religion)</tag>: 被列出的神祇在這裡備受尊崇。</p>
-<p class="NoIndent"><tag>異國風 (Exotic)</tag>: 這裡有些罕見奇特的商品和服務，是附近其他區域都無法提供的。把它們列出來。</p>
+<p class="NoIndent"><tag>奇特 (Exotic)</tag>: 這裡有些罕見奇特的商品和服務，是附近其他區域都無法提供的。把它們列出來。</p>
 <p class="NoIndent"><tag>資源 (Resource)</tag>: 這個聚落能夠很輕易地獲得被列出的資源（例如某種香料、礦石、魚、或葡萄）。該資源在這裡的價格明顯要便宜得多。</p>
 <p class="NoIndent"><tag>需求 (Need)</tag>: 這個聚落對被列出的資源有著迫切或持續性的需求。該資源在這裏的售價明顯要昂貴得多。</p>
 <p class="NoIndent"><tag>誓約關係 (Oath)</tag>: 這個聚落已經對被列出的聚落立下誓約。這個誓約通常代表著忠誠或支持，但也可能會是更加具體的內容。</p>
@@ -147,20 +147,22 @@ Title: "世界"
 	和 <tag>貿易關係(由你選擇二項)</tag>。</p>
 
 若這個小鎮被另一個聚落列為貿易關係，選擇一項：
-<ul class="tagList"><li>The town is booming: Booming, Lawless</li>
-<li>The town stands on a crossroads: Market, +Prosperity</li>
-<li>The town is defended by another steading: Oath (that steading), +Defenses</li>
-<li>The town is built around a church: Power (Divine)</li>
-<li>The town is built around a craft: Craft (your choice), Resource (something required for that craft)</li>
-<li>The town is built around a military post: +Defenses</li></ul>
+<ul class="tagList">
+	<li>這個小鎮正在急速發展: <tag class="green">急速發展</tag>, <tag>無法地帶</tag></li>
+	<li>這個小鎮佇立於交通匯聚之處: <tag>市場</tag>, <tag class="red">+[經濟]</tag></li>
+	<li>這個小鎮正被另一個聚落所保護: <tag>誓約關係(該聚落)</tag>, <tag class="blue">+[防禦]</tag></li>
+	<li>這個小鎮圍繞著一座教堂建立: <tag>力量(神聖)</tag></li>
+	<li>這個小鎮以一種工藝為中心建立: <tag>工藝(由你選擇)</tag>, <tag>資源(某個該工藝所需的事物)</tag></li>
+	<li>這個小鎮圍繞著一座軍事基地建立: <tag class="blue">+[防禦]</tag></li></ul>
 
 選擇一個問題:
-<ul class="tagList"><li>The town has grown too big for an important supply (like grain, wood, or stone): Need (that resource), Trade (a village or town with that resource)</li>
-<li>The town offers defense to others: Oath (your choice), -Defenses</li>
-<li>The town is notorious for an outlaw who is rumored to live there: Personage (the outlaw), Enmity (where the crimes were committed)</li>
-<li>The town has cornered the market on a good or service: Exotic (that good or service), Enmity (a settlement with ambition)</li>
-<li>The town has a disease: -Population</li>
-<li>The town is a popular meeting place: +Population, Lawless</li></ul>
+<ul class="tagList">
+	<li>這個小鎮成長得太大了，因此缺少某種重要的物資（像是穀物、木材、或石材）: <tag>需求(該資源)</tag>, <tag>貿易關係(擁有該資源的村莊或小鎮)</tag></li>
+	<li>這個小鎮為他人提供防禦兵力: <tag>誓約關係(由你選擇)</tag>, <tag class="blue">-[防禦]</tag></li>
+	<li>這個小鎮因為一名亡命之徒居住於此的傳聞而臭名昭彰: <tag>重要人士(亡命之徒)</tag>, <tag>敵對關係(犯罪發生的場所)</tag></li>
+	<li>這個小鎮壟斷了某種商品或服務的市場: <tag>奇特(該商品或服務)</tag>, <tag>敵對關係(野心勃勃的聚落)</tag></li>
+	<li>這個小鎮中有疾病正在肆虐: <tag class="green">-[人口]</tag></li>
+	<li>這個小鎮是一個很受歡迎的會面地點: <tag class="green">+[人口]</tag>, <tag>無法地帶</tag></li></ul>
 
 <hr/>
 <h2>創造一座要塞 (Making a Keep)</h2>
@@ -171,12 +173,13 @@ Title: "世界"
 	<tag>需求(補給)</tag> <tag>貿易關係(某個提供補給的地點)</tag> <tag>誓約關係(由你選擇)</tag>。</p>
 
 若至少有一個聚落效忠於這個要塞，選擇一項:
-<ul class="tagList"><li>The keep belongs to a noble family: +Prosperity, Power (Political)</li>
-<li>The keep is run by a skilled commander: Personage (the commander), +Defenses</li>
-<li>The keep stands watch over a trade road: +Prosperity, Guild (trade)</li>
-<li>The keep is used to train special troops: Arcane, -Population</li>
-<li>The keep is surrounded by fertile land: remove Need (Supplies)</li>
-<li>The keep stands on a border: +Defenses, Enmity (steading on the other side of the border)</li></ul>
+<ul class="tagList">
+	<li>這個要塞從屬於某個貴族世家: <tag class="red">+[經濟]</tag>, <tag>力量(政治)</tag></li>
+	<li>The keep is run by a skilled commander: Personage (the commander), +Defenses</li>
+	<li>The keep stands watch over a trade road: +Prosperity, Guild (trade)</li>
+	<li>The keep is used to train special troops: Arcane, -Population</li>
+	<li>The keep is surrounded by fertile land: remove Need (Supplies)</li>
+	<li>The keep stands on a border: +Defenses, Enmity (steading on the other side of the border)</li></ul>
 選擇一個問題:
 <ul class="tagList"><li>The keep is built on a naturally defensible position: Safe, -Population</li>
 <li>The keep was a conquest from another power: Enmity (steadings of that power)</li>
