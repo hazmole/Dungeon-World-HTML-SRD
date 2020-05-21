@@ -44,6 +44,9 @@ li.currentli.headli:not(.active) {
   font-weight:bold;
   background: #e7f5ff;
 }
+ul.tagList li {
+  margin: 5px 0;
+}
 
 h1, h2, h3, h4 {
   font-weight: bold;
