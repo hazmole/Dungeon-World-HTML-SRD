@@ -21,11 +21,9 @@
   {{ template "chrome/sidemenu.html" . }}
   <div id="wrap">
     <div class="container">
-       <div class="row">
-          <div class="col-md-8 col-md-offset-1">
-             {{ .Content }}
-          </div>
-       </div>
+      <div class="col-md-8 inner-container">
+        {{ .Content }}
+      </div>
     </div>
  </div>
       {{ template "chrome/footer.html" . }}
